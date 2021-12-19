@@ -1,5 +1,6 @@
 from datetime import time
 from unittest import TestCase
+import unittest
 from selenium import webdriver
 import time
 from selenium.webdriver.common import by
@@ -78,4 +79,7 @@ class Tests(TestCase):
 
     def tearDown(self):
         self._browser.close() 
+
+if __name__ == "__main__":
+    unittest.main()
 
